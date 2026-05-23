@@ -18,6 +18,9 @@ app/blog/
 components/blog/
   ClassInfoTable.tsx               # 수업 정보 테이블 컴포넌트
   ExamStructureTable.tsx           # 시험 구조 테이블 컴포넌트
+
+components/home/
+  BlogPreviewSection.tsx           # 홈 페이지용 블로그 미리보기 캐러셀 (자동재생, 좌우 화살표, 닷 인디케이터)
 ```
 
 ## 환경변수 설정
@@ -81,3 +84,6 @@ Notion DB
 
 `BlogUpdatesSection.tsx`와 `data.ts`는 현재 정적 더미 데이터를 사용한다.  
 Notion 연동이 필요하면 `data.ts`의 배열을 Notion fetch 함수로 교체한다.
+
+`BlogPreviewSection.tsx`는 홈 페이지에 삽입하는 독립 컴포넌트다.  
+`BLOG_POSTS` 배열의 데이터만 교체하면 바로 사용 가능하다.
